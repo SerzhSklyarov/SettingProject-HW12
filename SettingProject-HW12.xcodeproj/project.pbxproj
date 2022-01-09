@@ -13,6 +13,11 @@
 		B1139335278B7D6D00A87323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1139334278B7D6D00A87323 /* Assets.xcassets */; };
 		B1139338278B7D6D00A87323 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1139336278B7D6D00A87323 /* LaunchScreen.storyboard */; };
 		B1139340278B8AE800A87323 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B113933F278B8AE800A87323 /* Model.swift */; };
+		B1139344278B926F00A87323 /* ParentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1139343278B926F00A87323 /* ParentCell.swift */; };
+		B1139346278B94D700A87323 /* SimpleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1139345278B94D700A87323 /* SimpleCell.swift */; };
+		B1139348278B959A00A87323 /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1139347278B959A00A87323 /* SwitchCell.swift */; };
+		B113934A278B95AD00A87323 /* StatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1139349278B95AD00A87323 /* StatusCell.swift */; };
+		B113934C278B95B900A87323 /* UpdateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B113934B278B95B900A87323 /* UpdateCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		B1139337278B7D6D00A87323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1139339278B7D6D00A87323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B113933F278B8AE800A87323 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B1139343278B926F00A87323 /* ParentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentCell.swift; sourceTree = "<group>"; };
+		B1139345278B94D700A87323 /* SimpleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCell.swift; sourceTree = "<group>"; };
+		B1139347278B959A00A87323 /* SwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
+		B1139349278B95AD00A87323 /* StatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCell.swift; sourceTree = "<group>"; };
+		B113934B278B95B900A87323 /* UpdateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +66,10 @@
 		B113932A278B7D6B00A87323 /* SettingProject-HW12 */ = {
 			isa = PBXGroup;
 			children = (
+				B1139342278B919300A87323 /* Views */,
 				B1139341278B8D1800A87323 /* Model */,
 				B113932B278B7D6B00A87323 /* AppDelegate.swift */,
 				B113932D278B7D6B00A87323 /* SceneDelegate.swift */,
-				B113932F278B7D6B00A87323 /* SettingsViewController.swift */,
 				B1139334278B7D6D00A87323 /* Assets.xcassets */,
 				B1139336278B7D6D00A87323 /* LaunchScreen.storyboard */,
 				B1139339278B7D6D00A87323 /* Info.plist */,
@@ -73,6 +83,19 @@
 				B113933F278B8AE800A87323 /* Model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B1139342278B919300A87323 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B113932F278B7D6B00A87323 /* SettingsViewController.swift */,
+				B1139343278B926F00A87323 /* ParentCell.swift */,
+				B1139345278B94D700A87323 /* SimpleCell.swift */,
+				B1139347278B959A00A87323 /* SwitchCell.swift */,
+				B1139349278B95AD00A87323 /* StatusCell.swift */,
+				B113934B278B95B900A87323 /* UpdateCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +169,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1139330278B7D6B00A87323 /* SettingsViewController.swift in Sources */,
+				B113934C278B95B900A87323 /* UpdateCell.swift in Sources */,
+				B1139344278B926F00A87323 /* ParentCell.swift in Sources */,
 				B113932C278B7D6B00A87323 /* AppDelegate.swift in Sources */,
+				B1139348278B959A00A87323 /* SwitchCell.swift in Sources */,
 				B113932E278B7D6B00A87323 /* SceneDelegate.swift in Sources */,
 				B1139340278B8AE800A87323 /* Model.swift in Sources */,
+				B1139346278B94D700A87323 /* SimpleCell.swift in Sources */,
+				B113934A278B95AD00A87323 /* StatusCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
