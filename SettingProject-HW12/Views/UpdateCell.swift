@@ -57,10 +57,6 @@ class UpdateCell: ParentCell {
         ])
     }
     
-    override func prepareForReuse() {
-        super.prepareForReuse()
-    }
-    
     func configure(with model: UpdateCellModel) {
         iconBox.backgroundColor = model.iconColor
         iconImage.image = model.icon

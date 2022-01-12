@@ -25,11 +25,4 @@ class SimpleCell: ParentCell {
         iconImage.image = model.icon
         cellLabel.text = model.title
     }
-    
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        iconBox.backgroundColor = nil
-        iconImage.image = nil
-        cellLabel.text = nil
-    }
 }

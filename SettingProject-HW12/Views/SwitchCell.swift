@@ -41,14 +41,6 @@ class SwitchCell: ParentCell {
         ])
     }
     
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        iconBox.backgroundColor = nil
-        iconImage.image = nil
-        cellLabel.text = nil
-        switchView.isOn = false
-    }
-    
     func configure(with model: SwitchCellModel) {
         iconBox.backgroundColor = model.iconColor
         iconImage.image = model.icon

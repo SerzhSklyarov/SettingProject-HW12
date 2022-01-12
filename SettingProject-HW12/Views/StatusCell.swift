@@ -42,14 +42,6 @@ class StatusCell: ParentCell {
         ])
     }
     
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        iconBox.backgroundColor = nil
-        iconImage.image = nil
-        cellLabel.text = nil
-        statusLabel.text = nil
-    }
-    
     func configure(with model: StatusCellModel) {
         iconBox.backgroundColor = model.iconColor
         iconImage.image = model.icon
