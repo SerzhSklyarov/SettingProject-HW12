@@ -41,9 +41,7 @@ class ParentCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        accessoryType = .disclosureIndicator
-        setupHierarchy()
-        setupLayout()
+        setupView()
     }
     
     required init?(coder: NSCoder) {
@@ -51,6 +49,12 @@ class ParentCell: UITableViewCell {
     }
     
     // MARK: - Setup
+    
+    func setupView() {
+        accessoryType = .disclosureIndicator
+        setupHierarchy()
+        setupLayout()
+    }
     
     func setupHierarchy() {
         
