@@ -34,7 +34,6 @@ class UpdateCell: ParentCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        accessoryType = .disclosureIndicator
     }
     
     required init?(coder: NSCoder) {
@@ -55,10 +54,6 @@ class UpdateCell: ParentCell {
             updateLabel.centerXAnchor.constraint(equalTo: updateBox.centerXAnchor),
             updateLabel.centerYAnchor.constraint(equalTo: updateBox.centerYAnchor)
         ])
-    }
-    
-    override func prepareForReuse() {
-        super.prepareForReuse()
     }
     
     func configure(with model: UpdateCellModel) {

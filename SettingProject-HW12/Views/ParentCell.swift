@@ -39,7 +39,22 @@ class ParentCell: UITableViewCell {
         return label
     }()
     
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        setupView()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     // MARK: - Setup
+    
+    func setupView() {
+        accessoryType = .disclosureIndicator
+        setupHierarchy()
+        setupLayout()
+    }
     
     func setupHierarchy() {
         
@@ -65,16 +80,6 @@ class ParentCell: UITableViewCell {
             cellLabel.leftAnchor.constraint(equalTo: iconBox.rightAnchor, constant: 25)
         ])
         
-    }
-    
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        setupHierarchy()
-        setupLayout()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     // MARK: - Metrics
